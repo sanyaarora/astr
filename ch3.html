@@ -6,7 +6,7 @@
 
 <head>
  <meta charset="utf-8">
-  <title> Background and Motivation </title>
+  <title> Regression </title>
   <link rel="icon" type="image/png" href="images/colorcompos.png">
   <meta name="description" content="Hello World">
   <meta name="author" content="Sanya Arora">
@@ -72,28 +72,51 @@
 
 <body>
 
-  <h2> Background and Motivation </h2>
+  <h2> Regression (Chapter 7) </h2>
       <div class = "container-fluid">
         <div class ="col-lg-12">
           <div class="jumbotron vertical-center" style="background-color: #f2e6dc">
-            <p class="text"> T Tauri stars are a class of pre-main-sequence stars, lying between protostars and main sequence stars in the stages of evolution.
-              They are relatively young stars that are still in the process of contracting and settling into a stable state of fusion, which will eventually make them main-sequence stars.
-              A depiction of the location of T Tauri stars in the Hertzsprung-Russell diagram is shown below: <br> </p>
-              <figure>
-                <img width=50% height=10% src="images/mainseq.png">  </img>
-                <figcaption class="text"> A plot from the Pennsylvania State University website. We can see that on the HR diagram, T Tauri stars lie just below where they will end up on the main sequence. </figcaption>
-              </figure>
+            <p class="text"> In this section of the course, we studied regression, a statistical tool used for modeling and understanding relationships between variables.
+              Regression models are used to establish a relationship between a dependent variable and one or more independent variables. The simplest form is linear regression,
+              where the relationship is modeled as a straight line. However, many problems require more complex models due to the nonlinear nature of the data. Some regression techniques are:
+              <br>
+              <br>
+              <b> Linear Regression: </b>
+              Used when the relationship between the dependent and independent variables can be described by a straight line. Least squares method is commonly used for
+              finding the best-fit line in linear regression.
+              <br>
+              <br>
+              <b> Nonlinear Regression: </b>
+              When the relationship between variables cannot be adequately described by a linear model, nonlinear regression is used. This involves complex functions that may
+              include exponential, logarithmic, or trigonometric terms.
+              <br>
+              <br>
+              <b> Robust Regression: </b>
+              This method is used to lessen the influence of outliers on the regression model, making it more resistant to anomalies in data. This is useful when the data
+              has many outliers that we do not want to influence the regression.
+              <br>
+              <br>
+              <b> Quantile Regression: </b>
+              Extends from estimating the mean to estimating several quantiles (for example the median or the 10th percentile),
+              providing a more complete view of the possible outcomes of the dependent variable. It is particularly useful when we are interested in understanding variations
+              in the distribution of the dependent variable.
+              <br>
+              <br>
+              <b> Poisson Regression: </b>
+              Used for modeling count data and rates at which events occur in a fixed interval of time or space. This model is based on the Poisson
+              distribution where the count outcomes have a Poisson probability distribution, and the logarithm of its expected value can be modeled as a linear combination of
+              unknown parameters.
+              <br>
+              <br>
+              Regression is widely used in many contexts, but an example use case is if we must model the relationship between the mass of black holes and the velocity dispersion of stars
+              in the galaxy bulges hosting them. Using robust regression could help mitigate the influence of atypical galaxies that do not fit the general trend, possibly due to measurement
+              errors or unique evolutionary histories.
 
-              <p class="text"> Due to the accreting disk surrounding T Tauri stars, they emit both a blue photometric excess that is detectable in the Johnson-Cousins
-                V band filter. By plotting color-color diagrams of stars in a nebula, we can identify T Tauri stars by their photometric excess. <br> </p>
-                <figure>
-                  <img width=50% height=10% src="images/initplot.png">  </img>
-                  <figcaption class="text"> A preliminary color-color diagram I made from color magnitudes of standard stars to find out if my project was feasible.
-                  As is clearly visible from this plot, T Tauri stars (red) exhibit a photometric excess in the V band that puts them above and to the left of
-                main sequence stars (blue). </figcaption>
-                </figure>
-                <p class="text"> For my project, I wanted to identify T Tauri stars using a color-color diagram similar to the one shown above, plot where they are located spatially
-                  inside the nebula, and see if I could find evidence of spatial segregation between T Tauri stars and main sequence stars. <br> </p>
+
+
+
+
+            </p>
 
 
 

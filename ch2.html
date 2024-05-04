@@ -6,7 +6,7 @@
 
 <head>
  <meta charset="utf-8">
-  <title> Background and Motivation </title>
+  <title> Nonparametrics </title>
   <link rel="icon" type="image/png" href="images/colorcompos.png">
   <meta name="description" content="Hello World">
   <meta name="author" content="Sanya Arora">
@@ -72,28 +72,34 @@
 
 <body>
 
-  <h2> Background and Motivation </h2>
+  <h2> Nonparametrics (Chapter 5) </h2>
       <div class = "container-fluid">
         <div class ="col-lg-12">
           <div class="jumbotron vertical-center" style="background-color: #f2e6dc">
-            <p class="text"> T Tauri stars are a class of pre-main-sequence stars, lying between protostars and main sequence stars in the stages of evolution.
-              They are relatively young stars that are still in the process of contracting and settling into a stable state of fusion, which will eventually make them main-sequence stars.
-              A depiction of the location of T Tauri stars in the Hertzsprung-Russell diagram is shown below: <br> </p>
-              <figure>
-                <img width=50% height=10% src="images/mainseq.png">  </img>
-                <figcaption class="text"> A plot from the Pennsylvania State University website. We can see that on the HR diagram, T Tauri stars lie just below where they will end up on the main sequence. </figcaption>
-              </figure>
+            <p class="text"> This part of the course described nonparametric approaches to statistics, which are useful when trying to estimate the distribution of a dataset without any prior knowledge about the data.
+              We studied many different tests that can be used to assess the distribution of data. Some of these tests are: <br> <br>
+              <b> Kolmogorov-Smirnov Test: </b> Used to compare the distribution of a sample against a hypothesized distribution (one-sided) or
+              to compare the distributions of two independent samples (two-sided). For example, it can be used to assess whether the distribution of star brightness in two different
+               galaxies follows the same distribution.
+               <br>
+               <br>
+               <b> Mann-Whitney U Test (or the Wilcoxon rank-sum test): </b> A nonparametric test that is used to compare two independent samples to determine whether their
+               population distributions are shifted from each other. Unlike the KS-test, it assess shifts in the center of the distributions, rather than analyzing the shape of the distributions.
+               <br>
+               <br>
+               <b>Wilcoxon Signed-Rank Test: </b>A test for comparing two paired samples to determine whether their population mean ranks differ. It is designed to compare two related samples, or
+               repeated measurements on a single sample. It is also useful for analyzing data in situations where the population cannot be assumed to be normally distributed.
+               <br>
+               <br>
+               <b> Spearman's Rank Correlation Coefficient: </b> used to measure the strength of the correlation between two variables. It can be used to determine either positive or negative correlations, and the p-value
+               is used to determine the statistical significance of the correlation.
+              <br>
+              <br>
+              Nonparametric techniques have very broad applications to most scenarios when one cannot make assumptions about the underlying distribution of data. A specific example of when it could be used
+              would be evaluating the impact of an environmental factor on the health of different regions without assuming a specific distribution for the environmental factors.
 
-              <p class="text"> Due to the accreting disk surrounding T Tauri stars, they emit both a blue photometric excess that is detectable in the Johnson-Cousins
-                V band filter. By plotting color-color diagrams of stars in a nebula, we can identify T Tauri stars by their photometric excess. <br> </p>
-                <figure>
-                  <img width=50% height=10% src="images/initplot.png">  </img>
-                  <figcaption class="text"> A preliminary color-color diagram I made from color magnitudes of standard stars to find out if my project was feasible.
-                  As is clearly visible from this plot, T Tauri stars (red) exhibit a photometric excess in the V band that puts them above and to the left of
-                main sequence stars (blue). </figcaption>
-                </figure>
-                <p class="text"> For my project, I wanted to identify T Tauri stars using a color-color diagram similar to the one shown above, plot where they are located spatially
-                  inside the nebula, and see if I could find evidence of spatial segregation between T Tauri stars and main sequence stars. <br> </p>
+               <br>
+            </p>
 
 
 

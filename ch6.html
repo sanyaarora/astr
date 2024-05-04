@@ -6,7 +6,7 @@
 
 <head>
  <meta charset="utf-8">
-  <title> Background and Motivation </title>
+  <title> Time Series </title>
   <link rel="icon" type="image/png" href="images/colorcompos.png">
   <meta name="description" content="Hello World">
   <meta name="author" content="Sanya Arora">
@@ -72,28 +72,73 @@
 
 <body>
 
-  <h2> Background and Motivation </h2>
+  <h2> Time Series Analysis (Chapter 11) </h2>
       <div class = "container-fluid">
         <div class ="col-lg-12">
           <div class="jumbotron vertical-center" style="background-color: #f2e6dc">
-            <p class="text"> T Tauri stars are a class of pre-main-sequence stars, lying between protostars and main sequence stars in the stages of evolution.
-              They are relatively young stars that are still in the process of contracting and settling into a stable state of fusion, which will eventually make them main-sequence stars.
-              A depiction of the location of T Tauri stars in the Hertzsprung-Russell diagram is shown below: <br> </p>
-              <figure>
-                <img width=50% height=10% src="images/mainseq.png">  </img>
-                <figcaption class="text"> A plot from the Pennsylvania State University website. We can see that on the HR diagram, T Tauri stars lie just below where they will end up on the main sequence. </figcaption>
-              </figure>
+            <p class="text"> In this section of the course, we covered an overview of statistical techniques used in time serires analysis. Time series is useful
+              when we have time-varying data, such as a pulsar with periodically varying luminosity. The main topics we discussed are: <br> <br>
 
-              <p class="text"> Due to the accreting disk surrounding T Tauri stars, they emit both a blue photometric excess that is detectable in the Johnson-Cousins
-                V band filter. By plotting color-color diagrams of stars in a nebula, we can identify T Tauri stars by their photometric excess. <br> </p>
-                <figure>
-                  <img width=50% height=10% src="images/initplot.png">  </img>
-                  <figcaption class="text"> A preliminary color-color diagram I made from color magnitudes of standard stars to find out if my project was feasible.
-                  As is clearly visible from this plot, T Tauri stars (red) exhibit a photometric excess in the V band that puts them above and to the left of
-                main sequence stars (blue). </figcaption>
-                </figure>
-                <p class="text"> For my project, I wanted to identify T Tauri stars using a color-color diagram similar to the one shown above, plot where they are located spatially
-                  inside the nebula, and see if I could find evidence of spatial segregation between T Tauri stars and main sequence stars. <br> </p>
+              <b> Smoothing: </b> Smoothing techniques are used to reduce noise and clarify signals in time series data. They help in highlighting
+              underlying trends by averaging out the variations. We can use methods like central moving average (CMA) or exponential weighted moving average (EWMA).
+              <br>
+              <br>
+              <b> Autocorrelation Functions (ACF): </b> Measures the correlation between a time series and lagged versions of itself. It quantifies how much
+              current values of the series are related to past values. ACF is used to identify repeating patterns within a time series. Partial Autocorrelation Functions (PACF)
+              is an alternative to ACF that isolates the direct effect of past observations on the
+              current observation, excluding indirect correlations from intermediate lags. Some models for generating ACFs are as follows:
+              <br>
+              <br>
+
+              <b> Random Walk Model: </b> Assumes that the future value of a variable is a random step from its current value, useful in predicted random data.
+              <br>
+              <b> Autoregressive (AR) Model: </b> Allows predicted values to be dependant on past values with different weights.
+              <br>
+              <b> Moving Average (MA) Model: </b> Instead of depending on past values of the variable, predicted values depend on past values of noise.
+              <br>
+              <b> ARMA and ARIMA Models: </b> ARMA combines both autoregressive and moving average models to analyze stationary time series,
+              while ARIMA includes differencing of raw observations to make the time series stationary before applying ARMA.
+              <br>
+              <b> ARCH Model: </b> Allows variance to change over time, which is ideal for data without a fixed variance.
+              <br>
+              <br>
+              <b> Discrete Correlation Functions (DCF): </b> Useful when we have unevenly sampled data. Computes the ACF without assuming even spacing of the data. Can be
+              used to find the ACF of one data set or to find cross-correlations between two datasets.
+              <br>
+              <br>
+              <b> Structure Function: </b> Investigates the variability of a time series, providing the temporal correlation structure
+              without needing the data to be stationary.
+              <br>
+              <br>
+              <b> Fourier Power Spectrum and Periodograms: </b> Evaluates the intensity of periodic signals or frequencies present in data, transforming data from the time domain
+              to the frequency domain. This helps us identify cyclic trends in data. The Lomb–Scargle periodogram is a commonly used method that allows for unevenly spaced data.
+              <br>
+              <br>
+              <b> ANOVA: </b> Used to determine if there are any statistically significant differences between the means of multiple independent groups.
+              <br>
+              <br>
+
+              These techniques are widely used to identify time-dependant structures in data. They are commonly used in Astronomy to identify periodic stars.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </p>
 
 
 

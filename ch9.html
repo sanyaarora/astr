@@ -6,7 +6,7 @@
 
 <head>
  <meta charset="utf-8">
-  <title> Background and Motivation </title>
+  <title> Spatial Processes </title>
   <link rel="icon" type="image/png" href="images/colorcompos.png">
   <meta name="description" content="Hello World">
   <meta name="author" content="Sanya Arora">
@@ -72,28 +72,59 @@
 
 <body>
 
-  <h2> Background and Motivation </h2>
+  <h2> Spatial Processes (Chapter 12) </h2>
       <div class = "container-fluid">
         <div class ="col-lg-12">
           <div class="jumbotron vertical-center" style="background-color: #f2e6dc">
-            <p class="text"> T Tauri stars are a class of pre-main-sequence stars, lying between protostars and main sequence stars in the stages of evolution.
-              They are relatively young stars that are still in the process of contracting and settling into a stable state of fusion, which will eventually make them main-sequence stars.
-              A depiction of the location of T Tauri stars in the Hertzsprung-Russell diagram is shown below: <br> </p>
-              <figure>
-                <img width=50% height=10% src="images/mainseq.png">  </img>
-                <figcaption class="text"> A plot from the Pennsylvania State University website. We can see that on the HR diagram, T Tauri stars lie just below where they will end up on the main sequence. </figcaption>
-              </figure>
+            <p class="text"> In this section of the course, we studied spatially distributed data. Spatial point processes are used to analyze sets of points
+              in one, two, or more dimensions.
+              We discussed several statistical techniques used in spatial analysis: <br>
+              <br>
+              <b> Density Estimation: </b> Techniques such as kernel density estimation (KDE) can be used to estimate the PDF
+              of spatially distributed data. KDE helps in creating a smooth estimate of density over space.
+              <br>
+              <br>
+              <b> Moran's I and Geary’s C: </b>Measures of how a variable
+                correlates with itself over space. They help in understanding whether a pattern is clustered, dispersed, or random.
+                Moran’s I is more sensitive to spatial clustering, while Geary’s C focuses on spatial dissimilarity.
+              <br>
+              <br>
+              <b> Two-Point Correlation Function: </b>Used to measure the probability over random that a
+              pair of objects will be found at a certain distance apart.
+              <br>
+              <br>
+              <b>Ripley's K Function: </b> Used to detect spatial clustering at multiple scales. Provides insights into the clustering pattern of points
+              beyond what is expected for a random distribution.
+              <br>
+              <br>
+              <b>Besag’s L Function: </b> An adaptation of Ripley’s K, Besag’s L function transforms the K statistic to stabilize
+              variance, and is useful in visualizing patterns in data.
+              <br>
+              <br>
+              <b>Variogram Analysis: </b> Assesses how data similarity decreases over distance.
+              Important in modeling spatial correlation structures and is often a precursor to kriging.
+              <br>
+              <br>
+              <b>Kriging: </b> A group of geostatistical techniques used to interpolate the values of random fields.
+              Ordinary kriging uses a weighted average of known data points to estimate unknown points.
+              Beyond ordinary kriging, there are several more kriging methods such as universal kriging and cokriging.
+              These methods handle scenarios like varying trends over space or multiple correlated variables.
+              <br>
+              <br>
+              Overall, spatial processes are important in many different fields. A notable example is climate research, where we might
+              predict natural events in certain locations by spatially interpolating data. 
 
-              <p class="text"> Due to the accreting disk surrounding T Tauri stars, they emit both a blue photometric excess that is detectable in the Johnson-Cousins
-                V band filter. By plotting color-color diagrams of stars in a nebula, we can identify T Tauri stars by their photometric excess. <br> </p>
-                <figure>
-                  <img width=50% height=10% src="images/initplot.png">  </img>
-                  <figcaption class="text"> A preliminary color-color diagram I made from color magnitudes of standard stars to find out if my project was feasible.
-                  As is clearly visible from this plot, T Tauri stars (red) exhibit a photometric excess in the V band that puts them above and to the left of
-                main sequence stars (blue). </figcaption>
-                </figure>
-                <p class="text"> For my project, I wanted to identify T Tauri stars using a color-color diagram similar to the one shown above, plot where they are located spatially
-                  inside the nebula, and see if I could find evidence of spatial segregation between T Tauri stars and main sequence stars. <br> </p>
+
+
+
+
+
+
+              <br>
+              <br>
+
+
+             </p>
 
 
 

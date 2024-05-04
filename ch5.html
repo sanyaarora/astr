@@ -6,7 +6,7 @@
 
 <head>
  <meta charset="utf-8">
-  <title> Background and Motivation </title>
+  <title> Multivariate Analysis </title>
   <link rel="icon" type="image/png" href="images/colorcompos.png">
   <meta name="description" content="Hello World">
   <meta name="author" content="Sanya Arora">
@@ -72,28 +72,46 @@
 
 <body>
 
-  <h2> Background and Motivation </h2>
+  <h2> Multivariate Analysis (Chapter 8) </h2>
       <div class = "container-fluid">
         <div class ="col-lg-12">
           <div class="jumbotron vertical-center" style="background-color: #f2e6dc">
-            <p class="text"> T Tauri stars are a class of pre-main-sequence stars, lying between protostars and main sequence stars in the stages of evolution.
-              They are relatively young stars that are still in the process of contracting and settling into a stable state of fusion, which will eventually make them main-sequence stars.
-              A depiction of the location of T Tauri stars in the Hertzsprung-Russell diagram is shown below: <br> </p>
-              <figure>
-                <img width=50% height=10% src="images/mainseq.png">  </img>
-                <figcaption class="text"> A plot from the Pennsylvania State University website. We can see that on the HR diagram, T Tauri stars lie just below where they will end up on the main sequence. </figcaption>
-              </figure>
+            <p class="text">
+              During this part of the course, we explored multivariate analysis, which involves interpreting datasets with several variables. The goal is to find
+              the distribution of data in a multidimensional space and reduce the number of variables to simplify the dataset's structure. We discussed several statistical
+              methods for multivariate analysis:
+              <br>
+              <br>
+              <b> Hotelling’s T² statistic: </b>
+                This is an extention of the t-test to the multivariate space. It tests whether the means of populations are significantly different
+                when data are multidimensional.
+                <br>
+                <br>
+              <b> Multiple Linear Regression: </b>
+                A statistical method that models the relationship between 2 or more variables x_i and a response variable y by fitting a linear equation to the data.
+                The regression line is calculated by finding the minimum sum of squared deviations of the predicted values from the actual values.
+                <br>
+                <br>
+              <b>Principal Component Analysis (PCA):</b> This method reduces dimensionality by transforming the original variables into a new set of
+                variables (principal components), which are uncorrelated. The first few components contain most of the variance of the dataset.
+                We can then analyze the principal components to determine which variables are the most related to each other.
+                <br>
+                <br>
+              <b> Factor Analysis: </b> Used to describe variability among observed, correlated variables in terms of a lower number of
+              variables called factors. This is useful in situations where we are identifying underlying variables, or factors,
+              that explain a pattern of correlations in observed variables.
+              <br>
+              <br>
+              Overall, multivariate analysis has many uses across different fields. One example could be in
+              ecological studies, such as analyzing environmental impacts on coral reef systems. We could use PCA to reduce the dimensions of
+              environmental data (such as water temperature, salinity, nutrient concentrations, light levels, etc) to identify the main factors affecting coral health. 
 
-              <p class="text"> Due to the accreting disk surrounding T Tauri stars, they emit both a blue photometric excess that is detectable in the Johnson-Cousins
-                V band filter. By plotting color-color diagrams of stars in a nebula, we can identify T Tauri stars by their photometric excess. <br> </p>
-                <figure>
-                  <img width=50% height=10% src="images/initplot.png">  </img>
-                  <figcaption class="text"> A preliminary color-color diagram I made from color magnitudes of standard stars to find out if my project was feasible.
-                  As is clearly visible from this plot, T Tauri stars (red) exhibit a photometric excess in the V band that puts them above and to the left of
-                main sequence stars (blue). </figcaption>
-                </figure>
-                <p class="text"> For my project, I wanted to identify T Tauri stars using a color-color diagram similar to the one shown above, plot where they are located spatially
-                  inside the nebula, and see if I could find evidence of spatial segregation between T Tauri stars and main sequence stars. <br> </p>
+
+
+
+
+
+               <br> </p>
 
 
 

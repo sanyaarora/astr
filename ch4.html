@@ -6,7 +6,7 @@
 
 <head>
  <meta charset="utf-8">
-  <title> Background and Motivation </title>
+  <title> Smoothing </title>
   <link rel="icon" type="image/png" href="images/colorcompos.png">
   <meta name="description" content="Hello World">
   <meta name="author" content="Sanya Arora">
@@ -72,28 +72,42 @@
 
 <body>
 
-  <h2> Background and Motivation </h2>
+  <h2> Smoothing (Chapter 6) </h2>
       <div class = "container-fluid">
         <div class ="col-lg-12">
           <div class="jumbotron vertical-center" style="background-color: #f2e6dc">
-            <p class="text"> T Tauri stars are a class of pre-main-sequence stars, lying between protostars and main sequence stars in the stages of evolution.
-              They are relatively young stars that are still in the process of contracting and settling into a stable state of fusion, which will eventually make them main-sequence stars.
-              A depiction of the location of T Tauri stars in the Hertzsprung-Russell diagram is shown below: <br> </p>
-              <figure>
-                <img width=50% height=10% src="images/mainseq.png">  </img>
-                <figcaption class="text"> A plot from the Pennsylvania State University website. We can see that on the HR diagram, T Tauri stars lie just below where they will end up on the main sequence. </figcaption>
-              </figure>
+            <p class="text">
+              In this section of the course, we analyzed smoothing techniques, which are useful when we want to
+              construct continuous representations of data distributions from discrete observations. Density estimation
+              aims to approximate the underlying PDF of a dataset without assuming any specific parametric form.
+              <br>
+              <br>
+              Histograms are a basic form of density estimation that involves dividing data into bins and counting the
+              number of observations per bin. The main drawback of histograms is that they can be biased by the choice of
+              bin width and bin origin, which can significantly affect the representation of data.
+              <br>
+              <br>
+              Kernel density estimators (KDEs) provide a smoother and more flexible estimation of a PDF.
+              KDEs work by placing a continuous kernel function at each data point and summing these kernels to produce a
+              density estimate. The choice of the kernel function and the bandwidth (the width parameter of the kernel) are
+              important for achieving a balance between bias and variance of the estimate.
+              <br>
+              <br>
+              More advanced methods for smoothing include adaptive smoothing and multivariate density estimation. Adaptive
+              smoothing allows the bandwidth to vary depending on the local data density, providing a better visualization
+              in regions with differing data densities. Multivariate density estimation extends KDE to higher dimensions, useful
+              for analyzing higher dimensional data.
+              <br>
+              <br>
+              An example of smoothing could involve ecological data, where we could use kernel density estimation
+              to analyze the spatial distribution of a wildlife population based on GPS tracking data. By applying KDE,
+              we could visualize population density across a geographical area and assess
+              the impact of environmental factors on animal movements.
 
-              <p class="text"> Due to the accreting disk surrounding T Tauri stars, they emit both a blue photometric excess that is detectable in the Johnson-Cousins
-                V band filter. By plotting color-color diagrams of stars in a nebula, we can identify T Tauri stars by their photometric excess. <br> </p>
-                <figure>
-                  <img width=50% height=10% src="images/initplot.png">  </img>
-                  <figcaption class="text"> A preliminary color-color diagram I made from color magnitudes of standard stars to find out if my project was feasible.
-                  As is clearly visible from this plot, T Tauri stars (red) exhibit a photometric excess in the V band that puts them above and to the left of
-                main sequence stars (blue). </figcaption>
-                </figure>
-                <p class="text"> For my project, I wanted to identify T Tauri stars using a color-color diagram similar to the one shown above, plot where they are located spatially
-                  inside the nebula, and see if I could find evidence of spatial segregation between T Tauri stars and main sequence stars. <br> </p>
+              <br>
+              <br>
+            </p>
+
 
 
 

@@ -6,7 +6,7 @@
 
 <head>
  <meta charset="utf-8">
-  <title> Background and Motivation </title>
+  <title> Clustering </title>
   <link rel="icon" type="image/png" href="images/colorcompos.png">
   <meta name="description" content="Hello World">
   <meta name="author" content="Sanya Arora">
@@ -72,28 +72,70 @@
 
 <body>
 
-  <h2> Background and Motivation </h2>
+  <h2> Clustering (Chapter 9) </h2>
       <div class = "container-fluid">
         <div class ="col-lg-12">
           <div class="jumbotron vertical-center" style="background-color: #f2e6dc">
-            <p class="text"> T Tauri stars are a class of pre-main-sequence stars, lying between protostars and main sequence stars in the stages of evolution.
-              They are relatively young stars that are still in the process of contracting and settling into a stable state of fusion, which will eventually make them main-sequence stars.
-              A depiction of the location of T Tauri stars in the Hertzsprung-Russell diagram is shown below: <br> </p>
-              <figure>
-                <img width=50% height=10% src="images/mainseq.png">  </img>
-                <figcaption class="text"> A plot from the Pennsylvania State University website. We can see that on the HR diagram, T Tauri stars lie just below where they will end up on the main sequence. </figcaption>
-              </figure>
+            <p class="text"> We discussed clustering in this section of the course. Clustering is important when we have data that
+              we must classify in separate categories, or we want to see if certain populations in data are signficantly far apart.
+              <br>
+              <br>
+              Dendograms are diagrams that visually represent the clusters produced by hierarchical
+              clustering. Dendrograms show how individual elements or clusters are merged or divided based on the distance metric
+              used in clustering. Agglomerative hierarchical clustering is a common clustering method in which each data point is
+              a separate cluster
+              and then merged them based on the distance between clusters. Some common forms of Agglomerative hierarchical clustering are:
+               <br> 
+              <b>  Single Linkage Clustering: </b> Also known as the nearest neighbor clustering. Merges clusters with the smallest minimum pairwise distance.
+                <br>
+              <b> Complete Linkage Clustering: </b>
+                Merges clusters based on the largest distance between any member of the clusters, aiming for tightly knit clusters.
+                <br>
+              <b> Average Linkage Clustering: </b>
+              Uses the average distance between all members of clusters to merge different clusters.
+              <br>
+              <b> Ward’s Minimum Variance: </b> Minimizes the total variance within each cluster, so each merge increases the
+              total variance the least amount possible.
+              <br>
+              <br>
+              The most common nonheirarchical clustering method is k-means clustering. K-means partitions data into k clusters by
+              assigning points to the cluster center nearest to them, and then re-calculating cluster centers based on the assigned points.
+              <br>
+              <br>
+              Unlike unsupervised clustering, supervised clustering is a different techinque that involves training models on a
+              labeled dataset, and then using the trained model to classify new data points. Some supervised classification methods are:
+              <br>
+              <b> Linear Discriminant Analysis (LDA) and Classification Trees: </b>
+              LDA finds a linear combination of features that separates multiple classes of objects.
+              Classification trees split data into branches to form decision nodes, which help in making predictions.
+              <br>
+              <b> Nearest-Neighbor Classifiers: </b>
+              Classify new data points based on the most common cluster among the points' nearest k neighbors.
+              <br>
+              <b> Automated Neural Networks: </b> Use learning algorithms to identify patterns, and then classify data
+              based on the learned weights.
+              <br>
+              <br>
+              Clustering has many applications whenever we want to classify data. For example, my research involves classifying
+              data at the XENONnT experiment into either electron or photon signals. We use unsuperivised clustering to achieve this.
 
-              <p class="text"> Due to the accreting disk surrounding T Tauri stars, they emit both a blue photometric excess that is detectable in the Johnson-Cousins
-                V band filter. By plotting color-color diagrams of stars in a nebula, we can identify T Tauri stars by their photometric excess. <br> </p>
-                <figure>
-                  <img width=50% height=10% src="images/initplot.png">  </img>
-                  <figcaption class="text"> A preliminary color-color diagram I made from color magnitudes of standard stars to find out if my project was feasible.
-                  As is clearly visible from this plot, T Tauri stars (red) exhibit a photometric excess in the V band that puts them above and to the left of
-                main sequence stars (blue). </figcaption>
-                </figure>
-                <p class="text"> For my project, I wanted to identify T Tauri stars using a color-color diagram similar to the one shown above, plot where they are located spatially
-                  inside the nebula, and see if I could find evidence of spatial segregation between T Tauri stars and main sequence stars. <br> </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </p>
 
 
 
